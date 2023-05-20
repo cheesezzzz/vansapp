@@ -1,0 +1,27 @@
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import "./index.css";
+
+
+function App() {
+  return (
+    <BrowserRouter>
+      <header className="flex justify-between p-6 bg-[#FFF7ED]">
+        <Link className="font-black text-lg" to="/">
+          #VANLIFE
+        </Link>
+        <nav className="font-medium">
+          <Link to="/about">About</Link>
+        </nav>
+      </header>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
