@@ -3,3 +3,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .luxury {
+        @apply bg-black
+    }
+
+    .simple {
+        @apply bg-[#E17654]
+    }
+
+    .rugged {
+        @apply bg-[#115E59]
+    }
+}

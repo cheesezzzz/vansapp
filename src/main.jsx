@@ -2,8 +2,11 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import "./index.css";
+import Vans from "./pages/Vans";
+import VanDetails from "./pages/VanDetails";
 
+import "./index.css";
+import "./server";
 
 function App() {
   return (
@@ -12,13 +15,16 @@ function App() {
         <Link className="font-black text-lg" to="/">
           #VANLIFE
         </Link>
-        <nav className="font-medium">
+        <nav className="font-medium space-x-4">
           <Link to="/about">About</Link>
+          <Link to="/vans">Vans</Link>
         </nav>
       </header>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/vans" element={<Vans />} />
+        <Route path="/vans/:id" element={<VanDetails />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,4 +1,5 @@
 import AbtImg from "/src/assets/images/about-hero.png";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -15,16 +16,15 @@ export default function About() {
             travel plans can go off without a hitch. (Hitch costs extra 😉)
           </p>
           <p>
-            {" "}
             Our team is full of vanlife enthusiasts who know firsthand the magic
             of touring the world on 4 wheels.
           </p>
         </div>
         <div className="bg-light-orange p-8 my-12 space-y-4">
-          <h2 className="text-2xl font-semibold">Your destination is waiting. Your van is ready.</h2>
-          <button className="py-3 px-4 bg-black text-white font-semibold rounded-md">
+          <h2 className="text-2xl font-semibold pb-7">Your destination is waiting. Your van is ready.</h2>
+          <Link to='/vans' className="py-3 px-4 bg-black text-white font-semibold rounded-md">
             Explore our vans
-          </button>
+          </Link>
         </div>
       </div>
     </div>
