@@ -38,7 +38,7 @@ export default function Vans() {
 
   return (
     <div className="px-10">
-      <div>
+      <div className="py-6">
         <h1 className=" text-3xl font-semibold">Explore our vans options</h1>
       </div>
       <div className="grid grid-cols-2 gap-x-6 gap-y-6">{vanElements}</div>
