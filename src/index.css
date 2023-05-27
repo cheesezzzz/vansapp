@@ -16,4 +16,10 @@
     .rugged {
         @apply bg-[#115E59]
     }
+
+    .active-link {
+        font-weight: bold;
+        text-decoration: underline;
+        color: #161616;
+    }
 }
