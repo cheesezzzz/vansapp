@@ -22,4 +22,16 @@
         text-decoration: underline;
         color: #161616;
     }
+
+    .selected__type--simple {
+        @apply bg-[#E17654] text-[#FFEAD0]
+    }
+
+    .selected__type--rugged {
+        @apply bg-[#115E59] text-[#FFEAD0]
+    }
+
+    .selected__type--luxury {
+        @apply bg-[#000] text-[#FFEAD0]
+    }
 }

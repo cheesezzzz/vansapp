@@ -14,7 +14,7 @@ export default function VanDetails() {
 
   return (
     <div className="p-6 space-y-4">
-      <Link to="/vans" className="underline">
+      <Link to=".."  relative="path" className="underline">
         Back to all vans
       </Link>
       <div>
